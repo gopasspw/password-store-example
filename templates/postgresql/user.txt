@@ -1,0 +1,7 @@
+qocFyrfLVE
+---
+sql:  |
+  CREATE ROLE user LOGIN PASSWORD 'e2eb85ef77e272b6b2dfaf96d1f3648f';
+  GRANT user TO user;
+  ALTER USER user SET search_path = 'user';
+
