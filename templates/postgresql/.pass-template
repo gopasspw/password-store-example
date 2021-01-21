@@ -1,0 +1,7 @@
+{{ .Content }}
+---
+sql:  |
+  CREATE ROLE {{ .Name }} LOGIN PASSWORD '{{ print .Content .Name | md5sum }}';
+  GRANT {{ .Name }} TO {{ .Name }};
+  ALTER USER {{ .Name }} SET search_path = '{{ .Name }}';
+
