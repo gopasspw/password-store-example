@@ -1,0 +1,5 @@
+gQnh3wadmiC9SEZgjBze6mO4
+---
+sql:  |
+  INSERT INTO mailboxes (domain_id,local_part,password,name) VALUES(1,'user','{ARGON2ID}$argon2id$v=19$m=524288,t=3,p=4$nbEwZkkv3JlwDBVmz669J5V7y04Kwq/7lhbI/0oY300$1T4ihj2uP1bLMpFze8zaSAYgaCKLTRyeLcH3X+sCI1M','user');
+
